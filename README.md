@@ -1,34 +1,40 @@
 # User Management Application (React + TypeScript + Vite)
 
-CRUD app to manage users using the public JSONPlaceholder API.
+A fully functional CRUD application built with **React, TypeScript, Vite, Axios, and React Router**, using the public JSONPlaceholder API.
 
-## Features
+🔗 **Live Demo:**  
+https://user-management-app-woad-sigma.vercel.app
 
-- **Fetch Users**: list users from JSONPlaceholder (`GET /users`)
-- **Create User**: create form + `POST /users` (simulated)
-- **Update User**: edit form + `PUT /users/:id` (simulated)
-- **Delete User**: delete button + `DELETE /users/:id` (simulated)
-- **Routing**: Home, Create, Edit, Details (React Router)
-- **UX**: loading spinner + friendly error banners
-- **Responsive UI**: table on desktop + card list on mobile
+---
 
-## Run locally
+## 🚀 Features
+
+- **Fetch Users** — Display users from JSONPlaceholder (`GET /users`)
+- **Create User** — Form submission using `POST /users` (simulated)
+- **Update User** — Edit existing user using `PUT /users/:id` (simulated)
+- **Delete User** — Remove user using `DELETE /users/:id` (simulated)
+- **Client-side Routing** — Home, Create, Edit, and Details pages (React Router)
+- **Local Persistence Layer** — Overlay system using localStorage to simulate real backend persistence
+- **Loading States** — Spinner while API requests are in progress
+- **Error Handling** — User-friendly error banners
+- **Responsive Design** — Table layout (desktop) and card layout (mobile)
+- **Type Safety** — Fully typed using TypeScript
+
+---
+
+## 🛠 Tech Stack
+
+- React
+- TypeScript
+- Vite
+- Axios
+- React Router
+- Vercel (Deployment)
+
+---
+
+## 💻 Run Locally
 
 ```bash
 npm install
 npm run dev
-```
-
-Then open the URL shown in the terminal (usually `http://localhost:5173`).
-
-## Build
-
-```bash
-npm run build
-npm run preview
-```
-
-## Deploy (bonus)
-
-- **Vercel**: import the repo, framework preset “Vite”
-- **Netlify**: build command `npm run build`, publish directory `dist`
